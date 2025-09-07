@@ -55,7 +55,7 @@ predicted_LogR = logR_pipeline.predict(DataPrep.test_news['Statement'])
 np.mean(predicted_LogR == DataPrep.test_news['Label'])
 
 
-#building Linear SVM classfier
+#building Linear SVM classfier...
 svm_pipeline = Pipeline([
         ('svmCV',FeatureSelection.countV),
         ('svm_clf',svm.LinearSVC())
